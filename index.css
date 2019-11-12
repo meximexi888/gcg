@@ -1,0 +1,823 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    background: #fff;
+    /* overflow: hidden; */
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto,Noto,Helvetica,Arial,sans-serif;
+
+    color: #213038;
+    /* overflow: hidden; */
+}
+
+.ios body {
+
+    font-family: -apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.4;
+
+}
+
+
+/*这一句是用来解决在安卓上的点击出现篮框问题*/
+body{ -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+
+/*下面是解决ios上去除微信点击蓝色边框 */
+/* a:focus,
+input:focus,
+p:focus,
+div:focus{
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-user-modify:read-write-plaintext-only; 
+} */
+
+
+a {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #e9edf3
+
+}
+a, input, select, textarea {
+
+    outline: 0;
+
+}
+
+p {
+    font-size: 12px;
+    margin: 4px 0px;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+    margin: 0px;
+}
+
+#app {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.page {
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+    /* position: absolute; */
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    padding-bottom: 50px;
+
+    /* -webkit-transform: translate3d(0,0,0);
+
+    transform: translate3d(0,0,0);
+
+    contain: layout size style;
+
+    overflow: hidden; */
+}
+
+.text_right {
+    text-align: right
+}
+
+
+ .zy_linear_background {
+    background: -webkit-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #799dd2 ,#5d7bc3) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+ .zy_linear_background1 {
+    background: -webkit-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #7f7aa7, #6a6292) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+ .zy_linear_background2 {
+    background: -webkit-linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* 标准的语法 */
+}
+
+ .zy_linear_background3 {
+    background: -webkit-linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* 标准的语法 */
+    /* color: #fff  !important; */
+
+}
+
+ .zy_linear_background4 {
+    background: -webkit-linear-gradient(90deg, #31404a, #192328) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(90deg, #31404a, #192328) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(90deg, #31404a, #192328) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #31404a, #192328) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+ .zy_linear_background_disabled {
+    background: -webkit-linear-gradient(90deg, #afafaf, #afafaf) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(90deg, #afafaf, #afafaf) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(90deg, #afafaf, #afafaf) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #afafaf, #afafaf) !important; /* 标准的语法 */
+    /* background-color: #afafaf !important */
+}
+ .zy_linear_background6 {
+    background: -webkit-linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    background: -o-linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    background: -moz-linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    background: linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    color: #fff !important;
+}
+
+.zy_linear_background7 {
+    background: -webkit-linear-gradient(90deg, #db6be4 , #d053da) !important;
+    background: -o-linear-gradient(90deg, #db6be4 , #d053da) !important;
+    background: -moz-linear-gradient(90deg,#db6be4 , #d053da) !important;
+    background: linear-gradient(90deg, #db6be4 , #d053da) !important;
+    color: #fff !important;
+}
+
+.zy_linear_background8 {
+    background: -webkit-linear-gradient(90deg, #202123 , #141517) !important;
+    background: -o-linear-gradient(90deg, #202123 , #141517) !important;
+    background: -moz-linear-gradient(90deg,#202123 , #141517) !important;
+    background: linear-gradient(90deg, #202123 , #141517) !important;
+    color: #fff !important;
+}
+
+
+ .zy_linear_background5 {
+    background-color: rgba(251, 251, 251, 0.79)
+}
+
+
+.zy_bot_bor,.zy_top_bor {
+    position: relative;
+}
+
+.zy_bot_bor:after, .zy_top_bor:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.12);
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.zy_top_bor:before {
+    top: 0;
+}
+/*弹性滚动卡主的bug*/
+.touch_bug{
+    position: relative;
+    min-height: calc(100% - 38px)
+}
+/* .page-content > * {
+    -webkit-transform: translateZ(0px);
+} */
+
+/*解决上下滚动问题*/
+body:before {
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #333639;
+
+}
+
+.text_center {
+    text-align: center
+}
+
+
+
+@media screen and (max-width: 750px) {
+ 
+    .z_gcg_nav_title a {
+        display: none;
+    }
+ 
+    .max1098, .max1098-inner .zeact_navbar_inner {
+        padding: 0px 8px;
+    }
+
+    .z_balance .zeact_button {
+        margin-top: 2px; 
+    }
+
+    .prize_pool_number {
+        margin: 0px !important;
+        font-size: 20px !important;
+    }
+
+    .prize_pool_number span {
+        padding: 3px 3px !important;
+        margin: 0px 1px !important;
+        border-radius: 4px !important;
+    }
+ 
+    .prize_pool_sub {
+        width: 100% !important;
+    }
+
+    .z_lotter_block {
+        width: 100% !important;
+    }
+
+    .z_lotter_block .zeact_col_20 {
+        display: none;
+    }
+
+    .z_lotter_block .zeact_col_40 {
+        width: 100%;
+    }
+
+    .z_page_block .z_page_block {
+        margin-bottom: 20px;
+    }
+
+    
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+ 
+}
+.zeact_buylist_sub_nav .zy_sub_nav {
+    padding: 4px 16px 8px;
+    margin-bottom: 2px
+}
+
+.zeact_buylist_sub_nav .zy_sub_nav a.active{
+    font-size: 18px;
+}
+
+.zeact_buylist_sub_nav .zy_sub_nav a {
+    font-size: 14px;
+    padding-right: 12px
+}
+
+.zeact_page_footer {
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    color: #65696b;
+    background-color: #fff
+}
+.zeact_page_footer a {
+    color: #65696b
+}
+
+.zeact_page_index {
+    padding-top: 86px !important;
+    padding-bottom: 44px
+}
+
+.zy_sub_navbar.zeact_buylist_sub_nav{
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.03);
+}
+
+.page_index .zeact_navbar_inner {
+    height: 43px;
+}
+
+.page_index .zeact_navbar  {
+    min-height: 43px;
+}
+
+.page_index .zeact_navbar_child {
+    top:43px
+}
+
+.zeact_seach_row {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}    
+
+.zeact_seach_address {
+    width: 40px;
+    display: inline-block;
+    padding: 10px 0px;
+    height: 22px;
+    margin-top: 2px;
+    text-align: right
+}
+
+
+.zeact_seach_address img {
+    height: 100%;
+    /* display: block */
+}
+
+.zeact_logo img {
+    width: 26px;
+    vertical-align: middle;
+    margin-right: 10px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    border-radius: 100px;
+}
+
+/* .zy_nav_index .zeact_navbar_inner{
+    padding-left: 16px;
+    padding-right: 16px;
+} */
+
+.zy_nav_index .zeact_navbar_left,.zy_nav_index .zeact_navbar_right {
+    width: 30%
+}
+
+.zy_nav_index .zeact_navbar_title {
+    width: 40%
+}
+.zy_nav_index .zeact_logo{
+    font-size: 14px;
+    font-weight: 600;
+    color: #84888a;
+}
+
+.zy_nav_index .zeact_logo img {
+    width: 24px
+}
+
+.zeact_button_sub_nav .zy_sub_nav a{
+    display: inline-block;
+    padding: 4px 0px;
+    margin-left: 0px;
+    font-size: 14px;
+    color: #8d9297;
+    font-weight: 600;
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.zeact_button_sub_nav .zy_sub_nav {
+    padding: 0px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.zy_nav_index .zeact_navbar_title {
+    padding: 0px
+}
+
+.zeact_button_sub_nav .zy_sub_nav a.active {
+    color: #fff
+}
+
+.zeact_button_sub_nav .zy_sub_nav a.active:after {
+    width: 100%;
+    margin: 0px;
+    left: 0px;
+    height: 100%;
+    border-radius: 0px;
+    z-index: -1;
+}
+
+.zeact_button_sub_nav .zy_sub_nav a:first-of-type.active:after {
+    background: -webkit-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #799dd2 ,#5d7bc3) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+.zeact_button_sub_nav .zy_sub_nav a:last-of-type.active:after {
+    background: -webkit-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #7f7aa7, #6a6292) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+.zeact_prompt {
+    position: relative;
+}
+
+.zeact_prompt:after {
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top:22px;
+    right: 0;
+}
+
+.zy_nav_index .zeact_navbar_right {
+    width: 50% !important;
+}
+
+.max1098,.max1098-inner .zeact_navbar_inner {
+    max-width: 1098px;
+    margin: auto !important;
+    position: relative !important;
+}
+
+.z_lotter_block {
+    width: 68%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 4px 0px 42px;
+}
+
+.z_brage {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 0px 8px;
+    border-radius: 4px;
+}
+
+.z_margin {
+    padding: 6px 0px 32px;
+}
+
+.z_lotter_title {
+    padding: 16px 0px 2px;
+}
+
+.z_lotter_sub {
+    padding: 6px 0px 12px;
+}
+
+
+.z_lotter_button{
+    margin-bottom: -14px;
+    padding: 10px 0px !important;
+    width: 80%;
+}
+
+
+
+.z_block_title {
+    position: relative;
+    margin: 14px 0px;
+    padding: 4px 0px 4px 10px;
+    font-size: 16px;
+    color: #dfe5ef;
+}
+
+.z_block_title:before {
+    position: absolute;
+    content: '';
+    height: 60%;
+    width: 4px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important;
+    background: -o-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important;
+    background: -moz-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important;
+    background: linear-gradient(90deg, #799dd2 ,#5d7bc3) !important;
+    top: 20%;
+    left: 0;
+}
+
+.z_lotter_list_title {
+    padding: 16px;
+}
+
+.z_gcg_nav_title{
+    display: flex;
+    align-items: center;
+}
+
+.z_gcg_nav_title a{
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 15px;
+}
+.zy_loader_icon {
+    height: 100%;
+    width: 26px;
+    margin: auto;
+    display: flex;
+}
+
+.zy_loader_icon img{
+    width: 100%;
+    border: 0px !important;
+}
+.zeact_button {
+    padding: 4px 14px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.z_balance .zeact_button{
+    margin-left: 8px;
+    font-size: 14px;
+}
+.zeact_navbar {
+    /* position: absolute; */
+    min-height: 54px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* box-shadow: 0px 2px 10px rgba(0,0,0,.3); */
+    padding: 18px 0px;
+}
+
+.zeact_navbar_inner {
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 54px;
+
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-align: center;
+
+    -webkit-align-items: center;
+
+    -ms-flex-align: center;
+
+    align-items: center;
+
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+    /* background-color: #fff; */
+    /* justify-content: space-between; */
+}
+
+.zeact_navbar .zeact_navbar_left, .zeact_navbar .zeact_navbar_right, .zeact_navbar .zeact_navbar_title {
+
+    position: relative;
+    z-index: 1;
+
+}
+
+.zeact_navbar_title {
+    font-size: 18px;
+    font-weight: 600;
+    /* padding: 0px 16px; */
+}
+
+.zeact_navbar_child {
+    position: absolute;
+    left: 0;
+
+    top: 54px;
+    background-color: #fff;
+    width: 100%
+}
+.zeact_navbar_right {
+    text-align: right
+}
+.zeact_row {
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: justify;
+
+    -webkit-justify-content: space-between;
+
+    -ms-flex-pack: justify;
+
+    justify-content: space-between;
+
+    -webkit-flex-wrap: wrap;
+
+    -ms-flex-wrap: wrap;
+
+    flex-wrap: wrap;
+
+    -webkit-box-align: start;
+
+    -webkit-align-items: center;
+
+    -ms-flex-align: start;
+
+    align-items: center;
+
+}
+
+.zeact_row_left.zeact_row  {
+    justify-content: flex-start;
+}
+
+.zeact_last_col_right [class*='zeact_col_']:last-of-type {
+    text-align: right
+}
+
+   .zeact_col_100  {
+    width:100%
+   }
+   .zeact_col_95  {
+    width:95%
+   }
+   .zeact_col_90  {
+    width:90%
+   }
+   .zeact_col_85  {
+    width:85%
+   }
+   .zeact_col_80  {
+    width:80%
+   }
+   .zeact_col_75  {
+    width:75%
+   }
+   .zeact_col_70  {
+    width:70%
+   }
+   .zeact_col_66  {
+    width:66.66666666666666%
+   }
+   .zeact_col_65  {
+    width:65%
+   }
+   .zeact_col_60  {
+    width:60%
+   }
+   .zeact_col_55  {
+    width:55%
+   }
+   .zeact_col_50  {
+    width:50%
+   }
+   .zeact_col_45  {
+    width:45%
+   }
+   .zeact_col_40  {
+    width:40%
+   }
+   .zeact_col_35  {
+    width:35%
+   }
+   .zeact_col_33  {
+    width:33.333333333333336%
+   }
+   .zeact_col_30  {
+    width:30%
+   }
+   .zeact_col_25  {
+    width:25%
+   }
+   .zeact_col_20  {
+    width:20%
+   }
+   .zeact_col_15  {
+    width:15%
+   }
+   .zeact_col_10  {
+    width:10%
+   }
+   .zeact_col_5  {
+    width:5%
+   }
+.z_nowrap{
+    width:98%; 
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+    display: inline-block;
+}
+.z_page_block {
+    background-color: #292c2f;
+    /* border: 1px solid #333333; */
+    /* padding: 14px; */
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px #292c2f;
+    color: #dfe5ef;
+}
+
+.z_page_block .z_page_block {
+    background-color: #202123;
+}
+
+
+.prize_pool {
+    text-align: center;
+    color: #dfe5ef;
+    padding: 24px 0px 0px;
+}
+
+.prize_pool_title {
+    padding: 18px 0px;
+    font-size: 28px;
+}
+.prize_pool_number span{
+    /* font-size: 28px;
+    margin-left: 14px; */
+    padding: 4px 8px;
+    margin: 0px 2px;
+    background-color: #607ec4;
+    border-radius: 8px;
+    text-shadow: 0px 0px 4px #e7eaef;
+}
+
+.prize_pool_number {
+    margin: 8px 0px;
+    font-size: 50px;
+    letter-spacing: 3px
+}
+
+.prize_pool_sub {
+    position: relative;
+    padding: 18px 0px;
+    width: 40%;
+    margin:  14px auto 0px;
+}
+
+.prize_pool_sub:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background-color: #333639;
+    z-index: 0;
+}
+
+.prize_pool_sub p {
+    background-color: #292c2f;
+    width: 26%;
+    margin: auto;
+    padding: 10px 0px;
+    font-size: 18px;
+    z-index: 0;
+    position: relative;
+}
+.metamask {
+    width: 50%;
+    margin: 300px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.metamask a{
+    color: #333639;
+    padding: 18px;
+    display: block;
+    margin: 15px 0px;
+    background-color: bisque;
+}
+
+.metamask p{
+    font-size: 30px;
+}
+
+
+/*# sourceMappingURL=index.css.map*/
